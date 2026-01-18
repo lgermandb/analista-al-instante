@@ -13,7 +13,9 @@ import {
 // ============================================
 // CONFIGURACIÓN
 // ============================================
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+// En producción usa Render, en desarrollo usa localhost
+const API_URL = import.meta.env.VITE_API_URL ||
+  (window.location.hostname === 'localhost' ? 'http://localhost:8000' : 'https://analista-backend.onrender.com')
 
 export default function App() {
   const [loading, setLoading] = useState(false)
