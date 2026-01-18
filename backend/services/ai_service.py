@@ -17,7 +17,7 @@ from config.settings import settings
 # CONFIGURACIÓN DE GEMINI
 # ============================================
 genai.configure(api_key=settings.gemini_api_key)
-MODEL_NAME = "gemini-1.5-flash"
+MODEL_NAME = "gemini-2.0-flash"  # Modelo actualizado disponible en la API
 
 
 # ============================================
